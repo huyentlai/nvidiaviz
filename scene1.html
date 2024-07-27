@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Scene 1: Beginning to Dec 2019</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+    <script src="https://d3js.org/d3-scale.v3.min.js"></script>
+    <script src="https://d3js.org/d3-time.v2.min.js"></script>
+    <script src="https://d3js.org/d3-time-format.v3.min.js"></script>
+    <script src="https://d3js.org/d3-selection-multi.v1.js"></script>
+    <script src="https://d3js.org/d3-array.v2.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3-annotation/2.5.0/d3-annotation.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/chart.js"></script>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        .navbar {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .navbar button {
+            margin: 0 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+            transition: box-shadow 0.2s ease;
+        }
+    
+        .navbar button:active {
+            box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.3);
+        }
+
+        .navbar button.active {
+            color: blue;
+        }
+
+        #visualization {
+            width: 100%;
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 20px;
+        }
+
+        .tooltip {
+            position: absolute;
+            text-align: center;
+            width: 60px;
+            height: 28px;
+            padding: 2px;
+            font: 12px sans-serif;
+            background: lightsteelblue;
+            border: 0px;
+            border-radius: 8px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <button onclick="window.location.href='overview.html'">Home - Overview</button>
+        <button onclick="window.location.href='scene1.html'">Scene 1: Beginning to Dec 2019</button>
+        <button onclick="window.location.href='scene2.html'">Scene 2: Dec 2019 to 10 Dec 2022</button>
+        <button onclick="window.location.href='scene3.html'">Scene 3: 10 Dec 2022 to End</button>
+    </div>
+    <div id="visualization"></div>
+</body>
+</html>
